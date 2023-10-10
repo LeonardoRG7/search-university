@@ -1,0 +1,141 @@
+$colors: (
+  color1: #e7225e,
+  color2: #00a377,
+  color3: #f9cb0d,
+  color4: #610c9f,
+  color5: #ff8080,
+  color6: #176b87,
+  color7: #1aacac,
+  color8: #362fd9,
+  color9: #c70039,
+  color10: #e55604,
+  color11: #ff3fa4,
+  color12: #79155b,
+  color13: #a8df8e,
+  color14: #cece5a,
+  color15: #0d1282,
+  color16: #337ccf,
+  color17: #765827,
+  color18: #fba1b7,
+  color19: #557a46,
+  color20: #1a5d1a,
+);
+
+.Header {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.Header img {
+  margin-right: 5px;
+  width: 70px;
+}
+
+input {
+  width: 30rem;
+  height: 3rem;
+  margin: 0 0 0 8.5rem;
+}
+
+select {
+  width: 24.5rem;
+  height: 3rem;
+  margin: 0 auto;
+}
+
+.university {
+  .row {
+    margin: 0 auto;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .content {
+    word-wrap: break-word;
+    white-space: pre-line;
+    box-shadow: 0px 0px 12px 0px rgba(119, 119, 119, 0.2117647059);
+    padding: 1.5rem;
+    border-radius: 0;
+  }
+
+  .content-cards {
+    .alpha {
+      color: #00a377;
+      background-color: #f1fffb;
+      font-weight: 600;
+      padding: 10px;
+      border-radius: 11px;
+    }
+
+    .country {
+      color: #e7225e;
+      background-color: #ffebf2;
+      font-weight: 600;
+      padding: 10px;
+      border-radius: 11px;
+    }
+
+    h6 {
+      font-size: 1.5rem;
+      padding: 1rem 0;
+    }
+
+    .link {
+      a {
+        text-decoration: none;
+        font-size: 14px;
+        color: #5d5d5de0;
+
+        &:hover {
+          color: #e7225e;
+          transition: 0.5s all ease;
+        }
+      }
+    }
+
+    .more-options {
+      font-size: 31px;
+      padding: 0;
+      margin: 0;
+      color: gray;
+    }
+  }
+}
+
+.footer {
+  padding: 50px 0;
+  background-color: #eff5f5;
+  text-align: center;
+}
+
+.footer {
+  .social-links a {
+    height: 40px;
+    width: 40px;
+    display: inline-flex;
+    background-color: #e7225e;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    margin: 0 4px;
+    border: 1px solid transparent;
+    transition: all 0.5s ease;
+
+    color: #d6e4e5 !important;
+    text-decoration: none !important;
+  }
+}
+
+.footer .social-links a:hover {
+  background-color: transparent;
+  color: #e7225e !important;
+  border-radius: initial;
+}
+
+.footer-copy {
+  margin-top: 1.5rem;
+}

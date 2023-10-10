@@ -1,0 +1,76 @@
+<div class="Header mt-5">
+  <img src="../../../assets/img/logo.jpg" alt="Logo Header" />
+  <h1>Busca tu universidad</h1>
+</div>
+
+<div class="container header my-5">
+  <div
+    class="container search-filter d-flex align-items-center justify-content-between"
+  >
+    <input
+      type="text"
+      class="form-control container"
+      placeholder="Escribe tu universidad"
+      (input)="filter($event)"
+    />
+
+    <select (change)="onCountryChange($event)" class="form-select">
+      <option value="">Totods los paises</option>
+      <option *ngFor="let country of countrySet" [value]="country">
+        {{ country }}
+      </option>
+    </select>
+  </div>
+
+  <div class="container university mt-5">
+    <div class="row">
+      <div
+        class="col-xl-3 col-sm-6 col-xs-12 content"
+        *ngFor="let university of universities"
+      >
+        <div class="content-cards">
+          <div class="d-flex align-items-center justify-content-between">
+            <p class="alpha">{{ university.alpha_two_code }}</p>
+            <p class="country">{{ university.country }}</p>
+          </div>
+
+          <h6>
+            {{ university.name }}
+          </h6>
+
+          <p class="link">
+            <a [href]="university.web_pages[0]" target="_blank">
+              {{ university.web_pages[0] }}
+            </a>
+          </p>
+
+          <p class="more-options">...</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <div class="social-links">
+      <a
+        href="https://www.linkedin.com/in/leonardo-riascos-20b466200/"
+        title="LinkedIn"
+        target="_blank"
+        ><i class="fa-brands fa-linkedin"></i></a
+      ><a href="https://github.com/LeonardoRG7" title="GitHub" target="_blank"
+        ><i class="fa-brands fa-github"></i></a
+      ><a
+        href="https://leonardoriascosportafolio.netlify.app/"
+        title="Portafolio"
+        target="_blank"
+        ><i class="fa-solid fa-link"></i
+      ></a>
+    </div>
+    <p data-section="footer" data-value="copy" class="footer-copy">
+      © RiascosDEV.me All right reserved <br />
+      Made with ❤️ in Colombia
+    </p>
+  </div>
+</footer>
