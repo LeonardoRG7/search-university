@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class SearchService {
-  private apiUrl = '/api';
+  private apiUrl = `${environment.apiUrl}`;
 
   constructor(private _http: HttpClient) {}
 
