@@ -1,27 +1,12 @@
-# SarchUniversity
+<h1><strong> Search University App </strong></h1>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.9.
+La Search University App es una aplicación web diseñada para ayudar a las personas a encontrar universidades de todo el mundo, facilitando el proceso de búsqueda de instituciones educativas para aquellos que desean estudiar en el extranjero o explorar opciones académicas en diferentes países.
 
-## Development server
+Funcionalidades
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Búsqueda por Nombre: Los usuarios pueden ingresar el nombre de una universidad en el campo de búsqueda para encontrar información específica sobre esa institución.
+Selección de País: Mediante un menú desplegable, los usuarios pueden seleccionar el país en el que desean estudiar, lo que les permite explorar universidades según su ubicación geográfica.
 
-## Code scaffolding
+Demo
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+¡Pruébala ahora! Search University App: https://search-university.vercel.app/
