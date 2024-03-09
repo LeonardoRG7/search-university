@@ -15,7 +15,6 @@
     />
 
     <select (change)="onCountryChange($event)" class="form-select">
-      <option value="">Totods los paises</option>
       <option *ngFor="let country of countrySet" [value]="country">
         {{ country }}
       </option>
@@ -26,7 +25,7 @@
     <div class="row">
       <div
         class="col-xl-3 col-sm-6 col-xs-12 content"
-        *ngFor="let university of universities"
+        *ngFor="let university of filterUniversities"
       >
         <div class="content-cards">
           <div class="d-flex align-items-center justify-content-between">

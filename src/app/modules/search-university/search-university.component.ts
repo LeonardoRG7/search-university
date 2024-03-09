@@ -17,13 +17,14 @@ export class SearchUniversityComponent implements OnInit {
 
   ngOnInit(): void {
     this._searchService
-      .getForCountry('colombia')
+      .getForCountry('United%20Arab%20Emirates')
       .subscribe((uni: University[]) => {
         this.universities = uni;
         this.filterUniversities = [...uni];
       });
 
-    this._searchService.getAll().subscribe((res) => {
+    this._searchService.getAll().subscribe((res: any) => {
+      console.log(res);
       res.forEach(({ country }: University) => {
         this.countrySet.add(country);
       });

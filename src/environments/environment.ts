@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiUrl: 'http://universities.hipolabs.com/search?country=',
+  apiUrl: 'https://api-universities.onrender.com/universities',
 };
 
 /*

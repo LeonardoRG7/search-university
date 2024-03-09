@@ -17,6 +17,6 @@ export class SearchService {
   }
 
   getForCountry(country: string): Observable<University[]> {
-    return this._http.get<University[]>(`${this.apiUrl}${country}`);
+    return this._http.get<University[]>(`${this.apiUrl}?country=${country}`);
   }
 }
