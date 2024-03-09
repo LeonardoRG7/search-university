@@ -139,3 +139,15 @@ select {
 .footer-copy {
   margin-top: 1.5rem;
 }
+
+@media (max-witdh: 876px){
+.search-filter{
+      flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  input{
+    width: 100% !important;
+    margin: 0 !important;
+  }
+}
